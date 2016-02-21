@@ -1,0 +1,30 @@
+.laptop {
+	min-height: 630px;
+
+	.laptop-top {
+		height: 37px;
+	}
+	
+	.laptop-bottom {
+		height: 68px;
+	}
+
+	.laptop-middle{
+		align-items: center;
+		display: flex;
+		height: 407px;
+
+		.laptop-left {
+			
+		}
+
+		.slider {
+			height: 407px;
+			width: 651px;
+		}
+
+		.laptop-right {
+			
+		}
+	}
+}

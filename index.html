@@ -1,23 +1,37 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
+    <div class="content">
+      <section class="section services">
+        <div class="container">
 
-  <h1 class="page-heading">Posts</h1>
+        </div>
+      </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <section class="section projects">
+        <div class="container">
+          <div class="laptop">
+            <img src="images/laptop-top.png" class="laptop-top">
+            <div class="laptop-middle">
+              <img src="images/laptop-left.png" class="laptop-left">
+              <img src="images/modular-admin-slide.jpg" class="slider">
+              <img src="images/laptop-right.png" class="laptop-right">
+            </div>
+            <img src="images/laptop-bottom.png" class="laptop-bottom">
+          </div>
+        </div>
+      </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <section class="section portfolio">
+        <div class="container">
+        </div>
+      </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <section class="section contacts">
+        <div class="container">
+        </div>
+      </section>
+    </div>
 
-</div>
+

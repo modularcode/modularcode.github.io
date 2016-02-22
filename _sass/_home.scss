@@ -1,43 +1,76 @@
 .content {
 	margin-top: 200px;
 
+	.services {
+		font-family: "Open Sans", Open Sans, sans-serif;
+		margin-bottom: 230px;
+
+		.service-img {
+			display: block;
+			margin-bottom: 60px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.service-title {
+			color: #ffffff;
+			font-size: 1.5em;
+			font-weight: 400;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.service-description {
+			color: #d0d0d0;
+			display: inline-block;
+			font-size: 0.875em;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.service-price {
+			color: #ffffff;
+			font-size: 1.5em;
+			text-align: center;
+		}
+	}
+
 	.projects{
+		color: #ffffff;
+		font-weight: 200;
 
 		.laptop {
 			background-image: url(../images/laptop.png);
-			min-height: 630px;
 			background-repeat: no-repeat;
+			min-height: 630px;
 
 			.slider {
 				padding: 37px 107px 158px 108px;
 			}
+		}
 
-			/*.laptop-top {
-				height: 37px;
+		.text {
+			display: inline;
+
+			.project-title {
+				font-size: 2.25em;
+				font-weight: 200;
+				margin-bottom: 50px;
 			}
-			
-			.laptop-bottom {
-				height: 68px;
+
+			.project-description {
+				display: inline-block;
+				margin-bottom: 70px;
 			}
 
-			.laptop-middle{
-				align-items: center;
-				display: flex;
-				height: 407px;
-
-				.laptop-left {
-					
-				}
-
-				.slider {
-					height: 407px;
-					width: 651px;
-				}
-
-				.laptop-right {
-					
-				}
-			}*/
+			.details-btn {
+				border: 1px solid #ffffff;
+				border-radius: 3px;
+				color: #ffffff;
+				display: inline-block;
+				font-size: 1.17em;
+				padding: 25px 70px;
+			}
 		}
 	}
 }

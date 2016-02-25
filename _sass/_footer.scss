@@ -14,11 +14,13 @@
             width: 180px;
 
             .hexagon {
-                position: relative;
-                width: 52px; 
-                height: 30.02px;
                 background-color: #64C7CC;
+                color: #ffffff;
+                height: 30.02px;
                 margin: 15.01px 4px;
+                position: relative;
+                text-align: center;
+                width: 52px; 
             }
 
             .hexagon:before,
@@ -85,11 +87,13 @@
             width: 120px;
 
             .hexagon {
-                position: relative;
-                width: 52px; 
-                height: 30.02px;
                 background-color: #64C7CC;
+                color: #ffffff;
+                height: 30.02px;
                 margin: 9.01px 4px;
+                position: relative;
+                text-align: center;
+                width: 52px; 
             }
 
             .hexagon:before,

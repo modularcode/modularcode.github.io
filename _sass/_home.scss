@@ -167,6 +167,7 @@
 				display: inline-block;
 				font-size: 1.17em;
 				padding: 25px 70px;
+				transition: all 0.4s ease;
 
 				&:hover {
 					background-color: #ffffff;
@@ -225,6 +226,7 @@
 			font-size: 1.17em;
 			margin: auto;
 			padding: 25px 70px;
+			transition: all 0.4s ease;
 
 			&:hover {
 				background-color: #ffffff;

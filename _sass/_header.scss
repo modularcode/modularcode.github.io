@@ -4,6 +4,7 @@
 	left: 0;
 	position: fixed;
 	top: 0;
+	transition: all 0.4s ease;
 	width: 100%;
 	z-index: 4;
 
@@ -27,6 +28,12 @@
 					font-weight: 200;
 					line-height: 200px;
 					text-decoration: none;
+					transition: all 0.4s ease;
+				}
+
+				.logo {
+					height: 100px;
+					transition: all 0.4s ease;
 				}
 			}
 
@@ -39,12 +46,8 @@
 				padding-left: 80px;
 				text-align: right;
 			}
-
-			.logo {
-
-			}
 		}
-	}	
+	}
 }
 
 .header-cutted {
@@ -61,6 +64,11 @@
 
 				a {
 					line-height: 100px;
+				}
+
+				.logo {
+					height: 50px;
+					padding: 0 22px;
 				}
 			}
 		}

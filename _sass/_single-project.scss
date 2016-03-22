@@ -1,11 +1,17 @@
 .content-single {
 	background-color: #f7f7f7;
-	min-height: 800px;
+	min-height: 1800px;
 
 	.title {
 		font-size: 48px;
 		font-weight: 300;
+		margin-bottom: 60px;
+		padding-top: 180px;
 		text-align: center;
+	}
+
+	.screenshot {
+		margin-bottom: 30px;
 	}
 
 	.description {
@@ -13,21 +19,38 @@
 	}
 
 	.version {
+		margin-bottom: 30px;
 
 		.version-title {
-
+			color: #335a80;
+			font-size: 24px;
+			font-weight: 500;
+			margin-bottom: 15px;
 		}
 
 		.version-description {
-
+			margin-bottom: 15px;
 		}
 
-		.features {
+		.version-features {
+			line-height: 30px;
 			list-style-type: none;
+			margin-bottom: 20px;
 		}
 
 		.buttons {
+			text-align: right;
 
+			.version-btn {
+				background-color: #4d83b9;
+				border: none;
+				color: #ffffff;
+				margin-bottom: 5px;
+			}
+
+			.version-btn:hover {
+				background-color: #335a80;
+			}
 		}
 	}
 }

@@ -20,19 +20,20 @@
 			font-size: 1.5em;
 			font-weight: 300;
 		}	
-	}
 
-	@media only screen and (max-width: 991px) {
-		.introduction {
+		@media #{$md} {
 			height: 80px;
-			width: 700px;
+			width: 700px
 		}
-	}
 
-	@media only screen and (max-width: 767px) {
-		.introduction {
+		@media #{$sm}, #{$xs} {
 			height: 60px;
 			width: 500px;
+		}
+
+		@media #{$xs} {
+			width: 100%;
+			padding: 0 10px;
 		}
 	}
 
@@ -79,6 +80,18 @@
 			color: #ffffff;
 			font-size: 1.5em;
 		}
+
+		@media #{$md} {
+			margin-bottom: 160px;
+		}
+
+		@media #{$sm} {
+			margin-bottom: 100px;
+		}
+
+		@media #{$xs}  {
+			margin-bottom: 0;
+		}
 	}
 
 	.projects{
@@ -96,7 +109,7 @@
 				left: 12.5%;
 				position: absolute;
 				right: 12.5%;
-				top: 6%;
+				top: 11%;
 				
 				.slide {
 					position: absolute;
@@ -107,22 +120,22 @@
 					background-repeat: no-repeat;
 				}
 			}
-		}
 
-		@media only screen and (max-width: 1199px) {
-			.laptop {
+			@media #{$md} {
 				height: 452px;
 			}
-		}
 
-		@media only screen and (max-width: 991px) {
-			.laptop {
+			@media #{$sm} {
 				height: 338px;
-			}
-		}
 
-		@media only screen and (max-width: 767px) {
-			.laptop {
+				.screen {
+					left: 25.5%;
+					right: 25.5%;
+				}
+			}
+
+			@media #{$xs} {
+				height: 290px;
 				background: none;
 			}
 		}
@@ -146,7 +159,6 @@
 		}*/
 
 		.text {
-			display: inline;
 			margin-bottom: 100px;
 
 			.project-title {
@@ -174,10 +186,8 @@
 					color: #4d83b9;
 				}
 			}
-		}
 
-		@media only screen and (max-width: 767px) {
-			.text {
+			@media #{$sm}, #{$xs} {
 				text-align: center;
 			}
 		}
@@ -200,22 +210,26 @@
 	}
 
 	.contacts {
-		display: flex;
-		justify-content: center;
 		margin-bottom: 100px;
 		text-align: center;
 		width: 100%;
 			
-		.name {
+		.form-group {
 			margin-bottom: 30px;
-		}
 
-		.email {
-			margin-bottom: 30px;
-		}
+			&.message-block {
+				margin-bottom: 60px;
+			}
 
-		.message {
-			margin-bottom: 60px;
+			&.has-error {
+				text-align: left;
+
+				.has-error {
+					font-size: 13px;
+					color: #ffffff;
+					font-weight: 200;
+				}
+			}
 		}
 
 		.submit-btn {

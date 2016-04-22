@@ -2,10 +2,24 @@
 	margin-top: 200px;
 
 	.introduction {
-		height: 100px;
-		margin: 300px auto 290px;
-		text-align: right;
-		width: 900px;
+		height: 850px;
+		width: 100%;
+		position: relative;
+
+		.introduction-box {
+			position: absolute;
+			top: calc(50% - 150px);
+			left: 50%;
+			transform: translate( -50%, -60%);
+			height: 100px;
+			width: 900px;
+			text-align: right;
+
+			@media #{$md} {
+				height: 80px;
+				width: 700px
+			}
+		}
 
 		.intro {
 			background: url(../images/intro.png) center center no-repeat;
@@ -21,20 +35,21 @@
 			font-weight: 300;
 		}	
 
-		@media #{$md} {
-			height: 80px;
-			width: 700px
-		}
-
-		@media #{$sm}, #{$xs} {
-			height: 60px;
-			width: 500px;
+		@media #{$sm}{
+			.introduction-box {
+				height: 60px;
+				width: 500px;
+			}
 		}
 
 		@media #{$xs} {
-			width: 100%;
-			padding: 0 10px;
-		}
+			height: 500px;
+
+			.introduction-box {
+				width: 100%;
+				padding: 0 10px;
+			}
+		} 
 	}
 
 	.services {

@@ -10,6 +10,7 @@
 
 	@media #{$xs} {
 		height: 65px;
+		background-color: #9ab9d5;	
 	}
 
 	.navigation {
@@ -20,7 +21,6 @@
 			display: none;
 			width: 100%;
 			padding: 15px;
-			background-color: #9ab9d5;
 
 			.logo-block {
 				width: 30%;
@@ -109,7 +109,7 @@
 
 			@media #{$xs} {
 				text-align: left;
-				background-color: rgba(51,90,128, 0.95);
+				background-color: rgba(51,90,128, 1);
 
 				.navigation-item {
 					display: block;
@@ -167,7 +167,7 @@
 		}
 
 		@media #{$xs} {
-			background: none;
+			background-color: #9ab9d5;	
 			height: 65px;
 		}
 	}

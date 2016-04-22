@@ -1,55 +1,71 @@
-.content-single {
-	background-color: #f7f7f7;
-	min-height: 1800px;
+#single-page.content {
+	margin-top: 100px;
 
-	.title {
-		font-size: 48px;
-		font-weight: 300;
-		margin-bottom: 60px;
-		padding-top: 180px;
-		text-align: center;
+	@media #{$xs} {
+		margin-top: 65px;
 	}
+	
+	.single-page {
+		min-height: 300px;
+		background-color: #f7f7f7;
+		padding-bottom: 100px;
+		
+		.title-block {
+			margin-bottom: 60px;
+			padding-top: 180px;
 
-	.screenshot {
-		margin-bottom: 30px;
-	}
-
-	.description {
-		color: #000000;
-	}
-
-	.version {
-		margin-bottom: 30px;
-
-		.version-title {
-			color: #335a80;
-			font-size: 24px;
-			font-weight: 500;
-			margin-bottom: 15px;
-		}
-
-		.version-description {
-			margin-bottom: 15px;
-		}
-
-		.version-features {
-			line-height: 30px;
-			list-style-type: none;
-			margin-bottom: 20px;
-		}
-
-		.buttons {
-			text-align: right;
-
-			.version-btn {
-				background-color: #4d83b9;
-				border: none;
-				color: #ffffff;
-				margin-bottom: 5px;
+			@media #{$xs} {
+				padding-top: 75px;
 			}
-
-			.version-btn:hover {
-				background-color: #335a80;
+		}
+		
+		.title {
+			font-size: 48px;
+			font-weight: 300;
+			text-align: center;
+		}
+	
+		.screenshot {
+			margin-bottom: 30px;
+		}
+	
+		.description {
+			color: #000000;
+		}
+	
+		.version {
+			margin-bottom: 30px;
+	
+			.version-title {
+				color: #335a80;
+				font-size: 24px;
+				font-weight: 500;
+				margin-bottom: 15px;
+			}
+	
+			.version-description {
+				margin-bottom: 15px;
+			}
+	
+			.version-features {
+				line-height: 30px;
+				list-style-type: none;
+				margin-bottom: 20px;
+			}
+	
+			.buttons {
+				text-align: right;
+	
+				.version-btn {
+					background-color: #4d83b9;
+					border: none;
+					color: #ffffff;
+					margin-bottom: 5px;
+				}
+	
+				.version-btn:hover {
+					background-color: #335a80;
+				}
 			}
 		}
 	}

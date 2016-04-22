@@ -2,25 +2,63 @@
 	background-color: #4d83b9;
 	height: 200px;
 	left: 0;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	transition: all 0.4s ease;
 	width: 100%;
 	z-index: 4;
 
+	@media #{$xs} {
+		height: 65px;
+	}
+
 	.navigation {
 		margin: auto;
-		vertical-align: middle;
-		width: 1063px;
+		width: 100%;
+
+		.navigation-phone-toggle {
+			display: none;
+			width: 100%;
+			padding: 15px;
+			background-color: #9ab9d5;
+
+			.logo-block {
+				width: 30%;
+				float: left;
+
+				.logo {
+					height: 40px;
+				}
+			}
+
+			.navigation-toggle-block {
+				width: 70%;
+				float: left;
+				text-align: right;
+
+				.navigation-toggle {
+					font-size: 30px;
+					color: #ffffff;
+					padding: 5px 0;
+					display: block;
+				}
+			}
+
+			@media #{$xs} {
+				display: block;
+				height: 65px;
+			}
+		}
 
 		.navigation-menu {
-			align-items: center;
-			display: flex;
 			list-style: none;
 			margin-bottom: 0;
 			padding-left: 0;
+			display: block; 
+			text-align:center; 
 
 			.navigation-item {
+				display: inline-block; 
 				
 				a {
 					color: #ffffff;
@@ -37,13 +75,64 @@
 				}
 
 				&.navigation-left-item {
-					padding-right: 80px;
-					text-align: left;
+					padding-right: 120px;
 				}
 
 				&.navigation-right-item {
-					padding-left: 80px;
-					text-align: right;
+					padding-left: 120px;
+				}
+			}
+
+			@media #{$md} {
+				.navigation-item {
+					&.navigation-left-item {
+						padding-right: 100px;
+					}
+
+					&.navigation-right-item {
+						padding-left: 100px;
+					}
+				}
+			}
+
+			@media #{$sm} {
+				.navigation-item {
+					&.navigation-left-item {
+						padding-right: 40px;
+					}
+
+					&.navigation-right-item {
+						padding-left: 10px;
+					}
+				}
+			}
+
+			@media #{$xs} {
+				text-align: left;
+				background-color: rgba(51,90,128, 0.95);
+
+				.navigation-item {
+					display: block;
+					width: 100%;
+					padding-left: 20px !important;
+
+					
+					&.navigation-logo {
+						display: none;
+					}
+
+
+					&.navigation-left-item {
+						padding-right: 0px;
+					}
+
+					&.navigation-right-item {
+						padding-left: 0px;
+					}
+
+					a {
+						line-height: 45px;
+					}
 				}
 			}
 		}
@@ -63,6 +152,10 @@
 
 					a {
 						line-height: 100px;
+
+						@media #{$xs} {
+							line-height: 45px;
+						}
 					}
 
 					.logo {
@@ -71,6 +164,11 @@
 					}
 				}
 			}
+		}
+
+		@media #{$xs} {
+			background: none;
+			height: 65px;
 		}
 	}
 }

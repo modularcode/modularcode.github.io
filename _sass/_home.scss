@@ -2,15 +2,15 @@
 	margin-top: 200px;
 
 	.introduction {
-		height: 700px;
+		height: 300px;
 		width: 100%;
 		position: relative;
 
 		.introduction-box {
 			position: absolute;
-			top: calc(50% - 150px);
+			top: 50%;
 			left: 50%;
-			transform: translate( -50%, -60%);
+			transform: translate( -50%, -50%);
 			height: 100px;
 			width: 900px;
 			text-align: right;
